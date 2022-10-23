@@ -19,6 +19,10 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 19
+if ( votingAge >= 18 ){
+  console.log(true);
+}
 
 
 
@@ -30,11 +34,14 @@ Do the following:
    2. Use a conditional to check the value of the 1st variable versus the value assigned to the 2nd variable
    3. Change the value of the 1st variable if the conditional in step 2 is true
    4. Console log the value of the 1st variable
-
    HINT: no function required
 */
-
-
+let firstThing = 1 ;
+let   socendTing = ("1") ;
+if (firstThing == socendTing ){
+firstThing = 2
+   console.log(firstThing);
+}
 
 
 
@@ -43,11 +50,15 @@ Task 1c - Convert Strings to Numbers (not auto tested)
 
 Do the following:   
    1. Declare a variable with the string type value of "1999"
-   2. Convert the string value of "1999" to a integer value of 1999
-   3. Console log the result
+   2. Convert the string value of "1999" to a integer value of 1999 
+   3. Console log the result 
 
    HINT: look up the Number method
 */
+
+let age = "1999";
+age = 1999;
+console.log(age);
 
 
 
@@ -60,12 +71,13 @@ Do the following:
    2. Receive the parameters: a and b
    3. Multiply a and b and return the answer
 */
-
+let num1 = 9;
+let num2 = 9;
 function multiply(num1, num2){
   return num1 * num2;
 }
 
-
+console.log(num1 * num2);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -270,3 +282,4 @@ module.exports = {
   annoyingSong,
   grade
 }
+// test
