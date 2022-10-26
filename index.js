@@ -56,9 +56,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-let age = "1999";
-age = 1999;
-console.log(age);
+let age1 = "1999";
+age1 = 1999;
+console.log(age1);
 
 
 
@@ -89,9 +89,9 @@ Do the following:
  3. Return the newly calculated age
 */
 let dogeYears = function(age){
-  let ageinDog = age * 7;
-console.log("your age in doge year is " + ageinDog); 
-return ageinDog;
+  let humanYears  = age * 7;
+console.log("your age in doge year is " + humanYears ); 
+return humanYears * 7;
 };
 
 dogeYears(4);
