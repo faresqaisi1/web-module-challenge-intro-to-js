@@ -71,14 +71,13 @@ Do the following:
    2. Receive the parameters: a and b
    3. Multiply a and b and return the answer
 */
-let num1 = 9;
-let num2 = 9;
+/*let num1 = 9;
+let num2 = 9;*/
 function multiply(num1, num2){
   return num1 * num2;
 }
 
-console.log(num1 * num2);
-
+console.log(multiply(9,9))
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Age in Dog years
@@ -88,13 +87,14 @@ Do the following:
  2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
  3. Return the newly calculated age
 */
- function dogYears(age){
-  let humanYears  = age * 7;
-console.log( humanYears ); 
-return humanYears * 7;
-};
+ 
+function dogYears(dog){
+  const years = dog *7 ;
 
-dogYears(5);
+  return years
+
+};
+dogYears(24)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
