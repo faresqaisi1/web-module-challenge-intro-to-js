@@ -88,14 +88,13 @@ Do the following:
  2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
  3. Return the newly calculated age
 */
- function dogYears(human ,dog)
- {
- let age =( human * dog );
- console.log(age) 
-  return age ;
+ function dogYears(){
+  let humanYears  = age * 7;
+console.log( humanYears ); 
+return humanYears * 7;
+};
 
-}
-dogYears(4 , 7);
+dogeYears(4);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -277,7 +276,7 @@ foo();
 module.exports = {
   foo,
   multiply,
-  dogeYears,
+  dogYears,
   hungryDog,
   game,
   miles,
