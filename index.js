@@ -94,7 +94,7 @@ console.log( humanYears );
 return humanYears * 7;
 };
 
-dogYears(4);
+dogYears(5);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
