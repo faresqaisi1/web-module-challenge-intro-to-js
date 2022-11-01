@@ -130,39 +130,45 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
-function hungryDog(age,weight){
+function hungryDog(weight , age){
   let foodAmount;
   if (age >= 1){
     if (weight <= 5){
-      foodAmount = weight * .05;
+      foodAmount = weight * 0.05;
+        
     }
     else if (weight <= 10){
-      foodAmount = weight * .04;
+      foodAmount = weight *0.04;
     }
     else if (weight <= 15) {
-      foodAmount = weight * .03;
+      foodAmount = weight * 0.03;
+     
     }
-    else if (weight > 15) {
-      foodAmount = weight * .02;
+    else  {
+      foodAmount = weight * 0.02;
+      return foodAmount
     }
    }
-   else if (age < 1) {
-    if (age <= .33) {
-      foodAmount = weight * 10 * 100 ;
+   else  {
+    if (age <= 0.34) {
+      foodAmount = weight * 0.10  ;
+      return foodAmount
     }
-    else if (age <=.5833) {
-      foodAmount = weight * .05;
+    else if (age <= 0.58) {
+      foodAmount = weight * 0.05;
+      return foodAmount
     }
-    else if (age < 1) {
-      foodAmount = weight * .04;
+    else if (age < 0.99) {
+      foodAmount = weight * 0.04 ;
+      return foodAmount
     }
   }
 
-  return foodAmount;
+  return foodAmount
 
 }
   
-  console.log(hungryDog(4,0.75))
+  console.log(hungryDog(1,16))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -184,10 +190,69 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer){
-  
+  user=  Math.floor(Math.random() * 3);
+  let Rock = 0
+  let Paper = 1
+  let  Scissors = 2
 
- 
+  if (Scissors > Paper){
+
+    return ("you win!" ) 
 }
+ else if (Paper > Rock){
+
+  return ("you win! ")
+ }
+else if ( Rock < Scissors){
+  return ("you win! ")
+}
+else if (Scissors == Scissors){
+  return ("you lose! ")
+
+}
+else if (Paper == Paper){
+  return ("it's a tie")
+
+}
+
+else if (Rock == Rock){
+  return ("it's a tie")
+
+} 
+
+computer = Math.floor(Math.random() * 3);
+if (computer)
+if (Scissors > Paper){
+
+  return ("you win!" ) 
+}
+else if (Paper > Rock){
+
+return ("you win! ")
+}
+else if ( Rock < Scissors){
+return ("you win! ")
+}
+else if (Scissors == Scissors){
+return ("you lose! ")
+
+}
+else if (Paper == Paper){
+return ("it's a tie")
+
+}
+
+else if (Rock == Rock){
+return ("it's a tie")
+}
+
+}
+function computers (computer){
+ 
+
+return computer
+}
+console.log(game());
 
 
 
@@ -221,7 +286,7 @@ function feet(cm){
   let cmTofeet = cm / 30.48 ;
   return cmTofeet ;
 }
- feet()
+ feet(10)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
