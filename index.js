@@ -18,9 +18,11 @@ Do the following:
    HINT: no function required
 */
 
-let votingAge = 19
+let votingAge = 18;
 if ( votingAge >= 18 ){
   console.log(true);
+}else {
+  console.log("fulse")
 }
 
 /*
@@ -39,7 +41,7 @@ let firstThing = 1 ;
 let   socendTing = ("1") ;
 if (firstThing == socendTing ){
 firstThing = 2
-   console.log(firstThing);
+   console.log("test 1b " ,firstThing);
 }
 
 
@@ -52,9 +54,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-let age1 = "1999";
-age1 = 1999;
-console.log(age1);
+const numberz = "1999";
+
+console.log("test 1 c " , Number(numberz));
 
 
 /*
@@ -137,12 +139,12 @@ function hungryDog(weight , age){
       foodAmount = weight * 0.05;
         
     }
-    else if (weight <= 10){
+    else if(weight <= 10){
       foodAmount = weight *0.04;
     }
     else if (weight <= 15) {
       foodAmount = weight * 0.03;
-     
+      return foodAmount
     }
     else  {
       foodAmount = weight * 0.02;
@@ -168,7 +170,7 @@ function hungryDog(weight , age){
 
 }
   
-  console.log(hungryDog(1,16))
+  console.log('test hung ' ,hungryDog(1,15))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -188,71 +190,34 @@ Use the game function below to do the following:
  - tie should return "it's a tie"
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
+let computer =  Math.random();
+
+if (computer  <= 0.34){
+  computer = 'rock';
+ } else if(computer <= 0.67){
+  computer = 'paper';
+ } else if (computer > 0.68){
+  computer = 'scissors ' ;
+ }
 
 function game(user, computer){
-  user=  Math.floor(Math.random() * 3);
-  let Rock = 0
-  let Paper = 1
-  let  Scissors = 2
-
-  if (Scissors > Paper){
-
-    return ("you win!" ) 
+  if (user === computer){
+ return (`it's a tie` ) ;
+}else if (user === 'rock' && computer === 'scissors'){
+return `you win!` ;
+ }else if (user ===  'paper'  && computer === 'rock'){
+return `you win!` ;
+ }else if (user === 'scissors'  && computer === 'paper'){
+  return `you win!` ;
+ }else  {
+  return `you lose!`;
 }
- else if (Paper > Rock){
-
-  return ("you win! ")
- }
-else if ( Rock < Scissors){
-  return ("you win! ")
-}
-else if (Scissors == Scissors){
-  return ("you lose! ")
-
-}
-else if (Paper == Paper){
-  return ("it's a tie")
-
 }
 
-else if (Rock == Rock){
-  return ("it's a tie")
 
-} 
 
-computer = Math.floor(Math.random() * 3);
-if (computer)
-if (Scissors > Paper){
 
-  return ("you win!" ) 
-}
-else if (Paper > Rock){
-
-return ("you win! ")
-}
-else if ( Rock < Scissors){
-return ("you win! ")
-}
-else if (Scissors == Scissors){
-return ("you lose! ")
-
-}
-else if (Paper == Paper){
-return ("it's a tie")
-
-}
-
-else if (Rock == Rock){
-return ("it's a tie")
-}
-
-}
-function computers (computer){
- 
-
-return computer
-}
-console.log(game());
+console.log(game( 'paper' , computer));
 
 
 
@@ -301,10 +266,13 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(Bottles){
+function annoyingSong(number){
+  for (let i = number; i > 0 ; i --){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i -1} bottles of soda on the wall`;
+  }
 
 } 
-annoyingSong(99)
+console.log(annoyingSong(8));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
